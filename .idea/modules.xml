@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Exercicio_ABCTech.iml" filepath="$PROJECT_DIR$/.idea/Exercicio_ABCTech.iml" />
+      <module fileurl="file://$PROJECT_DIR$/VerificadorBoleto/VerificadorBoleto.iml" filepath="$PROJECT_DIR$/VerificadorBoleto/VerificadorBoleto.iml" />
       <module fileurl="file://$PROJECT_DIR$/VerificadorCNPJ/VerificadorCNPJ.iml" filepath="$PROJECT_DIR$/VerificadorCNPJ/VerificadorCNPJ.iml" />
       <module fileurl="file://$PROJECT_DIR$/VerificadorCPF/VerificadorCPF.iml" filepath="$PROJECT_DIR$/VerificadorCPF/VerificadorCPF.iml" />
     </modules>
