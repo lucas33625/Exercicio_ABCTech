@@ -15,6 +15,12 @@ public class Main {
         //Armazena o CNPJ digitado na variável CNPJ
         validador.CNPJ = sc.nextLine();
 
+        //Chama o metodo para validar o formato do CNPJ e encerra o programa caso não esteja de acordo
+        if (!Validador.validarFormato(validador.CNPJ)) {
+            System.out.println("CNPJ Inválido, digite um número de CNPJ válido: ");
+            return;
+        }
+
         //Transforma o resultado obtido no metodo em variavel int
         int primeiroVeri = validador.primeiroVerificador();
         int segundoVeri = validador.segundoVerificador();

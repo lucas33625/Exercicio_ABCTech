@@ -4,6 +4,17 @@ public class Validador {
     //Cria uma variável do tipo String do CPF
     public String CPF;
 
+    //Retornar true ou false caso o CPF tenha mais ou menos que 11 dígitos e reconhece caso seja inserido uma sequência de números iguais
+    public static boolean validarFormato (String CPF) {
+        if (CPF.length() != 11) {
+            return false;
+        }
+        else if (CPF.matches("(\\d)\\1{10}")){
+            return false;
+        }
+        return true;
+    }
+
     //Metodo que soma que transforma pela tabela unicode, multiplica e depois soma os dígitos do CPF para encontrar o primeiro digito
     public int somaDigitos() {
         return ((CPF.charAt(0) - 48) * 10)

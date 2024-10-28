@@ -4,7 +4,15 @@ package Entities;
         //Cria uma variável String para armazenar o CNPJ e manipula-lo
         public String CNPJ;
 
-
+        //Retorna true ou false caso o CNPJ digitado tenha mais ou menos de 14 digítos ou seja uma sequência de números iguais
+        public static boolean validarFormato (String CNPJ){
+            if (CNPJ.length() != 14){
+                return false;
+            } else if (CNPJ.matches("(\\d)\\1{13}")) {
+                return false;
+            }
+            return true;
+        }
 
         //Metodo para transformar o char em int através da tabela ASCII e calcula o soma dos produtos do CNPJ para verificar o primeiro digito
         public int somaDigitos (){

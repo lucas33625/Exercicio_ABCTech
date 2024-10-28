@@ -15,6 +15,13 @@ public class Main {
         //Armazena o CPF digitado
         validador.CPF = sc.nextLine();
 
+        //Chama o metodo para validar o formato do CPF dentro da estrutura condicional para parar o programa caso esteja fora do formato certo
+        if (!Validador.validarFormato(validador.CPF)) {
+            System.out.println("CPF invalido, por favor digite um número de CPF válido");
+            return;
+        }
+
+
         //Transforma o cálculo do primeiro e segundo dígito verificador em int
         int primeiroVer = validador.primeiroVerificador();
         int segundoVer = validador.segundoVerificador();
@@ -33,11 +40,11 @@ public class Main {
 
         //Estrutura que define se o CPF é válido ou não e imprime na tela o resultado
         if (a == validador.primerioVerifica() && b == validador.segundoVerifica()) {
-            System.out.println("CPF valido");
+            System.out.println("CPF válido");
         } else {
-            System.out.println("CPF invalido");
+            System.out.println("CPF inválido");
         }
-        //Fecha o Scanner
         sc.close();
+
     }
 }
