@@ -9,7 +9,7 @@ public class Validador {
         if (CPF.length() != 11) {
             return false;
         }
-        else if (CPF.matches("(\\d)\\1{10}")){
+        else if (CPF.matches("(\\d)1{10}")){
             return false;
         }
         return true;

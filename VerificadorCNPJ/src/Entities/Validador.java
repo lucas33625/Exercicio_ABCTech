@@ -8,7 +8,7 @@ package Entities;
         public static boolean validarFormato (String CNPJ){
             if (CNPJ.length() != 14){
                 return false;
-            } else if (CNPJ.matches("(\\d)\\1{13}")) {
+            } else if (CNPJ.matches("(\\d)1{13}")) {
                 return false;
             }
             return true;
